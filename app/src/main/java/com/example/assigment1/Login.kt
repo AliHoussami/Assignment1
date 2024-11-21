@@ -27,8 +27,8 @@ class Login : ComponentActivity(){
             val password = passwordEditText.text.toString()
 
             if (username == validUsername && password == validPassword) {
-                // Successful login, navigate to MainActivity
-                val intent = Intent(this, MainActivity::class.java)
+                // Navigate to ListActivity
+                val intent = Intent(this, ListActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {
